@@ -8,8 +8,11 @@ version: 2.3.1
 minimumMaNoirVersion: 1.8.0
 
 documentation:
-  overviewPath: overview.md
-  setupPath: setup.md
+  overviewPath: 
+    fr-FR: overview.fr.md
+    en-US: overview.md
+  setupPath: 
+    en-US: setup.md
 
 requiredPlugins:
   - repoUrl: https://github.com/manoir-app/manoir-plugin-core-mqtt
