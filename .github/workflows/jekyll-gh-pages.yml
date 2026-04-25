@@ -30,16 +30,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: "3.12"
-      - name: Install PyYAML
-        run: pip install pyyaml
+          node-version: "20"
       - name: Generate plugin catalog
         env:
           CATALOG_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
-        run: python scripts/generate-catalog.py
+        run: node scripts/generate-catalog.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
