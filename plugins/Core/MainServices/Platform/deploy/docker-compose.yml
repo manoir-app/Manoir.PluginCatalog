@@ -1,6 +1,6 @@
 services:
   core:
-    image: ghcr.io/manoir-app/manoir-core-adminui:0.1.55
+    image: ghcr.io/manoir-app/manoir-core-adminui:0.1.59
     container_name: manoir-platform-core
     restart: unless-stopped
     environment:
@@ -11,7 +11,7 @@ services:
       MANOIR_ADMINUI_PUBLIC_BASE_PATH: /platform
 
   erza:
-    image: ghcr.io/manoir-app/manoir-agents-erza:0.1.55
+    image: ghcr.io/manoir-app/manoir-agents-erza:0.1.59
     container_name: manoir-platform-erza
     restart: unless-stopped
     environment:

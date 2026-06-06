@@ -3,7 +3,7 @@ kind: AvailablePlugin
 repoUrl: https://github.com/manoir-app/MaNoir.Platform
 displayName: MaNoir Platform Core
 publisher: MaNoir
-version: 0.1.55
+version: 0.1.59
 minimumMaNoirVersion: 0.0.0
 announcedContributions:
   - kind: adminui.page
