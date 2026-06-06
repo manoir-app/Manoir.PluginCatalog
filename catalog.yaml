@@ -1,0 +1,10 @@
+catalog: https://github.com/manoir-app/Manoir.PluginCatalog
+plugins:
+  - domain:
+      code: Core
+      categories:
+        - code: MainServices
+          plugins:
+            - code: Platform
+              name: MaNoir Platform Core
+              repoUrl: https://github.com/manoir-app/MaNoir.Platform

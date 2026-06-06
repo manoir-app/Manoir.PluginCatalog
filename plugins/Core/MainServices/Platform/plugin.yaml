@@ -1,0 +1,24 @@
+apiVersion: manoir/v1
+kind: AvailablePlugin
+
+repoUrl: https://github.com/manoir-app/MaNoir.Platform
+displayName: MaNoir Platform Core
+publisher: MaNoir
+version: 0.0.0-dev
+minimumMaNoirVersion: 0.0.0
+
+announcedContributions:
+  - kind: adminui.page
+    labels:
+      fr-FR: Pages d'administration transverse
+      en-US: Platform administration pages
+
+deployment:
+  group: platform
+  adminUi:
+    pathPrefix: /platform
+    composeService: core
+    port: 8080
+  artifacts:
+    - kind: compose
+      path: deploy/docker-compose.yml
