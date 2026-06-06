@@ -1,18 +1,14 @@
 apiVersion: manoir/v1
 kind: AvailablePlugin
-
 repoUrl: https://github.com/manoir-app/MaNoir.Platform
 displayName: MaNoir Platform Core
 publisher: MaNoir
-version: 0.0.0-dev
+version: 0.1.55
 minimumMaNoirVersion: 0.0.0
-
 announcedContributions:
   - kind: adminui.page
     labels:
-      fr-FR: Pages d'administration transverse
-      en-US: Platform administration pages
-
+      en: Core admin
 deployment:
   group: platform
   adminUi:
